@@ -1,0 +1,28 @@
+[project]
+name = "twil-demo"
+version = "0.1.0"
+description = "Local Garmin analysis, reports, and retrieval with TwIL and Ollama"
+readme = "README.md"
+authors = [
+    { name = "kurborg", email = "kurborg@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fitparse>=1.2.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "pyarrow>=26.0.1",
+    "pyyaml>=6.0.3",
+    "requests>=2.34.2",
+]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.40", "plotly>=5.24"]
+
+[project.scripts]
+twil-demo = "twil_demo:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"

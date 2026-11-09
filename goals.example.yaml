@@ -1,0 +1,12 @@
+# Copy this file to goals.yaml and edit locally. goals.yaml is ignored by Git.
+athlete:
+  name: ""
+  philosophy: "Finish healthy and enjoy training."
+races: []
+# Add your own entries under races:
+#   - name: "Your race"
+#     date: "YYYY-MM-DD"
+#     aim: "Your goal"
+constraints:
+  - "Use the computed data and acknowledge missing measurements."
+  - "Do not invent targets, diagnoses, or race plans."

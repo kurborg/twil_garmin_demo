@@ -1,0 +1,3 @@
+FROM ./models/TwIL-8B-Q4_K_M-balanced.gguf
+PARAMETER temperature 0.7
+PARAMETER num_ctx 8192
